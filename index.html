@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="display" id="display" disabled>
+        <div class="buttons">
+            <!-- Primera fila -->
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteLast()">⌫</button>
+            <button onclick="insertOperator('%')">%</button>
+            <button onclick="insertOperator('/')">/</button>
+            <!-- Segunda fila -->
+            <button onclick="insertNumber('7')">7</button>
+            <button onclick="insertNumber('8')">8</button>
+            <button onclick="insertNumber('9')">9</button>
+            <button onclick="insertOperator('*')">*</button>
+            <!-- Tercera fila -->
+            <button onclick="insertNumber('4')">4</button>
+            <button onclick="insertNumber('5')">5</button>
+            <button onclick="insertNumber('6')">6</button>
+            <button onclick="insertOperator('-')">-</button>
+            <!-- Cuarta fila -->
+            <button onclick="insertNumber('1')">1</button>
+            <button onclick="insertNumber('2')">2</button>
+            <button onclick="insertNumber('3')">3</button>
+            <button onclick="insertOperator('+')">+</button>
+            <!-- Quinta fila -->
+            <button onclick="insertNumber('0')">0</button>
+            <button onclick="insertNumber('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="insertOperator('**')">^</button>
+            <!-- Sexta fila (funciones científicas) -->
+            <button onclick="insertFunction('Math.sin')">sin</button>
+            <button onclick="insertFunction('Math.cos')">cos</button>
+            <button onclick="insertFunction('Math.tan')">tan</button>
+            <button onclick="insertFunction('Math.sqrt')">√</button>
+            <button onclick="insertFunction('Math.log')">ln</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
